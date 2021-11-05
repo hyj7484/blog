@@ -1,4 +1,4 @@
-import {useEffect, useState, useRef} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import { Editor } from "react-draft-wysiwyg";
 import { EditorState } from "draft-js";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
@@ -28,6 +28,7 @@ const WriteBoard = (props) => {
   const onEditorStateChange = (e) => {
     setEditorState(e)
   }
+  console.log(React.version)
 
   useEffect(()=>{
     console.log(editorState);
