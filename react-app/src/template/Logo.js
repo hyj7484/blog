@@ -15,7 +15,7 @@ const style = {
     flex : 4,
     alignSelf : 'center',
   },
-  igo : {
+  sign : {
     flex : 1,
     backgroundColor : 'blue',
   },
@@ -49,7 +49,7 @@ const Logo = (props) => {
           <span style={style.span}> <Link to='/board' style={style.link}> board </Link> </span>
         </div>
       </div>
-      <div className="Logo_igo" style={style.igo}>
+      <div className="Logo_igo" style={style.sign}>
       </div>
     </div>
   )
