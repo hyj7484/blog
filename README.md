@@ -5,12 +5,12 @@ start make : 2021.11.05
 use Language and Library
 
 
-react :
-version - 17.0.2
+react : <br />
+version - 17.0.2 <br />
 
-route :
-npm install react-router-dom
+route : <br />
+npm install react-router-dom <br />
 
-draft-js
-npm install draft-js
-npm install react-draft-wysiwyg
+draft-js <br />
+npm install draft-js <br />
+npm install react-draft-wysiwyg <br />

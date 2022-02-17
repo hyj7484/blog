@@ -1,4 +1,4 @@
-import Logo from './Logo';
-import Container from './Container'
+import Option from './Option';
+import './template.css';
 
-export {Logo, Container};
+export {Option};

@@ -1,6 +1,6 @@
 import Home from './Home';
-import Information from './Information';
-import Board from './Board';
-import WriteBoard from './WriteBoard';
+import Login from './Login';
 
-export {Home, Information, Board, WriteBoard};
+import './Component.css';
+
+export {Home, Login};

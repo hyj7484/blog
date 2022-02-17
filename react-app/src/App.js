@@ -1,28 +1,18 @@
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-
-import {Home, Information, Board, WriteBoard} from './component/index';
-
+import {useState, useEffect} from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {Home, Login} from './component/index';
 import './App.css';
 
 function App() {
+  const [user, setUser] = useState(null);
+
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route path='/' exact>
-            <Home />
-          </Route>
-          <Route path='/information' exact>
-            <Information />
-          </Route>
-          <Route path='/board' exact>
-            <Board />
-          </Route>
-          <Route path='/writeboard' exact>
-            <WriteBoard />
-          </Route>
-        </Switch>
-      </Router>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={user === null ? <Login setUser={setUser}/> : <Home/>} exact/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

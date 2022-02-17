@@ -1,16 +1,29 @@
-import {Logo, Container} from '../template/index';
+import {useRef} from 'react';
+import {Link} from 'react-router-dom';
 
-const style = {
-}
+import {Option} from '../template/index';
+
+import listImg from '../Image/list.png';
+
 
 const Home = (props) => {
+  const list_element = useRef(null);
+
   return (
-    <div className="Home_Body">
-      <div className="Home_Header"> <Logo /> </div>
-      <div className="Home_Content">
-        <input style={{width:"50%", height:"50px", margin : '0 auto'}}/>
+    <>
+      <header className="Home_Header">
+        <div className="Home_Option">
+          <div style={{position:"relative", top:'50%', float:'left', transform:'translate(0%, -50%)'}}>
+            가나다라sdafssfas
+          </div>
+          <Option />
+        </div>
+      </header>
+      <nav className="Home_List" ref={list_element}>
+      </nav>
+      <div className="Home_Body">
       </div>
-    </div>
+    </>
   )
 }
 
